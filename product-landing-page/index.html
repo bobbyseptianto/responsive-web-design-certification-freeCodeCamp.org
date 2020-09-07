@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <html lang="en">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/14115411ed.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A product landing page created for the FreeCodeCamp's Responsive Web Design Certification.">
+  <title>Konoha Ninja Academy</title>
+</head>
+
+<body>
+
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <div>
+        <a id="schoolname" href="#top">
+          <img id="header-img" src="https://i.pinimg.com/originals/df/7a/e0/df7ae04f5d77c973f15acad0a0072c2e.png" alt="konoha logo academy"/>
+          <i>KONOHA NINJA ACADEMY</i>
+          </a>
+      </div>
+      <nav id="nav-bar">
+            <a class="nav-link" href="#curriculum">Curriculum Features</a>
+            <a class="nav-link" href="#introduction">Introduction</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+            <a class="nav-link" href="#teachers">Teachers</a>
+            <a class="nav-link" href="#reach">Reach Us</a>
+      </nav>
+    </header>
+    <!-- HEADER -->
+  
+    <!-- MAIN -->
+    <main>
+      <section id="banner">
+        <h2>Find the Will of Fire in You</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label for="email">
+            <input
+               name="email"
+               id="email"
+               type="email"
+               placeholder="Enter your email address"
+               required
+           /></label>
+          <label for="submit">
+            <input
+               id="submit"
+               type="submit"
+               value="Join Us"
+               class="button button-hover"
+           /></label>
+        </form>
+      </section>
+      
+      <div class="container">
+        <section class="section" id="curriculum">
+          <h2>Curricullum Features</h2>
+          <div class="feature">
+            <div class="icon"><img class="image-curriculum" src="https://vignette.wikia.nocookie.net/naruto/images/2/2e/Allied_Shinobi_Forces_Symbol.svg/revision/latest/scale-to-width-down/250?cb=20101119082226" alt="shinobi"/>
+            </div>
+            <div class="desc">
+            <h3>Shinobi Rules</h3>
+            <p>
+              Preventing them from running wild and causing the mission to be a failure. The most important thing for a shinobi is to be a tool for achieving their village and country's goals.
+            </p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="icon"><img class="image-curriculum" src="https://i.pinimg.com/originals/2a/5f/30/2a5f3054436fe36016886100d0548f8c.png" alt="chakra pie diagram"/>
+            </div>
+            <div class="desc">
+            <h3>Chakra Concentration & Hand Seals Practice</h3>
+            <p>
+              Teach students how to control their chakra more effectively. Only those who have worked hard on their ability to concentrate can become excellent shinobi.
+            </p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="icon"><img class="image-curriculum" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJ2qUegldoCt1NzDULuqLHSXIl_AQV1VgcmQ&usqp=CAU" alt="hokage hat"/>
+            </div>
+            <div class="desc">
+            <h3>Special Lectures from Hokage</h3>
+            <p>
+              Students will receive special lectures from Hokage. Introduction and  demonstration of Shinobi Forbidden Techniques.
+            </p>
+            </div>
+          </div>
+        </section>
+        
+        <section class="section" id="introduction">
+          <h2>Introduction</h2>
+          <iframe
+          id="video"
+          height="300"
+          src="https://www.youtube.com/embed/130LR0amQe0"
+          allowfullscreen
+          ></iframe>
+        </section>
+        
+        <section class="section" id="pricing">
+          <div class="pricing">
+            <h2>Pricing</h2>
+            <div class="ranks">
+              <!-- Genin -->
+              <div id="genin" class="rankcard">
+                <div class="top">
+                  <h4 class="rank-type">Genin</h4>
+                  <p class="rank-price"><span>$99</span>/year</p>
+                </div>
+                <div class="middle">
+                  <ul>
+                    <li><i class="fas fa-check"></i>Taijutsu</li>
+                    <li><i class="fas fa-check"></i>Ninjutsu</li>
+                    <li><i class="fas fa-check"></i>Genjutsu</li>
+                  </ul>
+                </div>
+                <div class="bottom">
+                  <button class="button button-hover">Apply</button>
+                </div>
+              </div>
+              <!-- Chuunin -->
+              <div id="chuunin" class="rankcard">
+                <div class="top">
+                  <h4 class="rank-type">Chuunin</h4>
+                  <p class="rank-price"><span>$199</span>/year</p>
+                </div>
+                <div class="middle">
+                  <ul>
+                    <li><i class="fas fa-check"></i>Taijutsu</li>
+                    <li><i class="fas fa-check"></i>Ninjutsu</li>
+                    <li><i class="fas fa-check"></i>Genjutsu</li>
+                    <li><i class="fas fa-check"></i>Kugutsu</li>
+                  </ul>
+                </div>
+                <div class="bottom">
+                  <button class="button button-hover">Apply</button>
+                </div>
+              </div>
+              <!-- Jounin -->
+              <div id="jounin" class="rankcard">
+                <div class="top">
+                  <h4 class="rank-type">Jounin</h4>
+                  <p class="rank-price"><span>$599</span>/year</p>
+                </div>
+                <div class="middle">
+                  <ul>
+                    <li><i class="fas fa-check"></i>Taijutsu</li>
+                    <li><i class="fas fa-check"></i>Ninjutsu</li>
+                    <li><i class="fas fa-check"></i>Genjutsu</li>
+                    <li><i class="fas fa-check"></i>Kugutsu</li>
+                    <li><i class="fas fa-check"></i>Fuinjutsu</li>
+                  </ul>
+                </div>
+                <div class="bottom">
+                  <button class="button button-hover">Apply</button>
+                </div>
+              </div>
+              <!-- Sannin -->
+              <div id="sannin" class="rankcard">
+                <div class="top">
+                  <h4 class="rank-type">Sannin</h4>
+                  <p class="rank-price"><span>$999</span>/year</p>
+                </div>
+                <div class="middle">
+                  <ul>
+                    <li><i class="fas fa-check"></i>Taijutsu</li>
+                    <li><i class="fas fa-check"></i>Ninjutsu</li>
+                    <li><i class="fas fa-check"></i>Genjutsu</li>
+                    <li><i class="fas fa-check"></i>Kugutsu</li>
+                    <li><i class="fas fa-check"></i>Fuinjutsu</li>
+                    <li><i class="fas fa-check"></i>Senjutsu</li>
+                    <li id="secret-jutsu"><i class="fas fa-check"></i>Edo Tensei<span> *BONUS*</span></li>
+                  </ul>
+                </div>
+                <div class="bottom">
+                  <button class="button button-hover">Apply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="teachers">
+          <h2>Teachers</h2>
+          <div class="teachers">
+          <div class="genin">
+            <h4>Genin Teachers</h4>
+              <img class="img-teachers" src="https://vignette.wikia.nocookie.net/naruto/images/b/bc/Iruka.png/revision/latest/scale-to-width-down/300?cb=20161013212102" alt="iruka image"/>
+              <div>Iruka</div>
+              <img class="img-teachers" src="https://vignette.wikia.nocookie.net/naruto/images/7/77/Ebisu.png/revision/latest/scale-to-width-down/300?cb=20160626182251" alt="ebisu image"/>
+            <div>Ebisu</div>
+              <img class="img-teachers" src="https://vignette.wikia.nocookie.net/naruto/images/0/0a/Shizune_Infobox.png/revision/latest/scale-to-width-down/300?cb=20170726101304" alt="shizune image"/>
+            <div>Shizune</div>
+          </div>
+          <div class="chuunin">
+            <h4>Chuunin Teachers</h4>
+              <img class="img-teachers" src="https://vignette.wikia.nocookie.net/naruto/images/6/67/Kurenai_Part_I.png/revision/latest/scale-to-width-down/300?cb=20150207094753" alt="kurenai image"/>
+            <div>Kurenai</div>
+              <img class="img-teachers" src="https://vignette.wikia.nocookie.net/naruto/images/b/bd/Anko_Part_I.png/revision/latest/scale-to-width-down/300?cb=20170412103610" alt="anko image"/>
+                <div>Anko</div>
+              <img class="img-teachers" src="https://vignette.wikia.nocookie.net/naruto/images/c/c9/Kabuto_Part_1.png/revision/latest/scale-to-width-down/300?cb=20170906101523" alt="kabuto image"/>
+            <div>Kabuto</div>
+          </div>
+            <div class="jounin">
+            <h4>Jounin Teachers</h4>
+              <img class="img-teachers" src="https://vignette.wikia.nocookie.net/naruto/images/2/27/Kakashi_Hatake.png/revision/latest/scale-to-width-down/300?cb=20170628120149" alt="kakashi hatake image"/>
+              <div>Kakashi</div>
+              <img class="img-teachers" src="https://vignette.wikia.nocookie.net/naruto/images/3/31/Might_Guy.png/revision/latest/scale-to-width-down/300?cb=20150401084456" alt="might guy image"/>
+              <div>Guy</div>
+              <img class="img-teachers" src="https://vignette.wikia.nocookie.net/naruto/images/b/bb/Itachi.png/revision/latest/scale-to-width-down/300?cb=20160125182202" alt="itachi uchiha image"/>
+              <div>Itachi</div>
+              </div>
+          <div class="sannin">
+            <h4>Sannin Teachers</h4>
+              <img class="img-teachers" src="https://vignette.wikia.nocookie.net/naruto/images/e/e6/Tsunade_Infobox.png/revision/latest/scale-to-width-down/300?cb=20180316171919" alt="tsunade image"/>
+              <div>Tsunade</div>
+              <img class="img-teachers" src="https://vignette.wikia.nocookie.net/naruto/images/2/21/Profile_Jiraiya.PNG/revision/latest/scale-to-width-down/300?cb=20160115173538" alt="jiraiya image"/>
+              <div>Jiraiya</div>
+              <img class="img-teachers" src="https://vignette.wikia.nocookie.net/naruto/images/1/14/Orochimaru_Infobox.png/revision/latest/scale-to-width-down/300?cb=20150925223113" alt="orochimaru image"/>
+              <div>Orochimaru</div>
+          </div>
+          </div>
+        </section>
+      </div>
+      
+      <footer>
+      <div id="footer">
+      <div id="reach">
+        <a class="nav-link" href="#">Privacy</a>
+        <a class="nav-link" href="#">Terms</a>
+        <a class="nav-link" href="#">Contact</a>
+      </div>
+      <div id="author">
+        Copyright © 2020, Bernardus Bobby (Product Landing Page Project)
+      </div>
+      </div>
+    </footer>
+      
+    </main>
+    <!-- MAIN -->
+  
+  </body>
+
+</body>
+
+</html>

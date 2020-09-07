@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: darkblue;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.7),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(https://previews.123rf.com/images/cnuisin/cnuisin1809/cnuisin180900111/107729424-dog-paw-seamless-pattern-vector-cat-paw-footprint-isolated-wallpaper-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.header {
+  background: linear-gradient(
+    115deg,
+    rgba(166, 0, 255, 1),
+    rgba(0, 0, 0, 0.5)
+  );
+  border-radius: 50px;
+  padding: 10px 45px 10px 45px;
+  text-align: justify;
+  box-shadow: 3px 3px 5px black, 2px 2px 5px white;
+  margin-bottom: 25px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: 2px solid rgba(166, 0, 255);
+}
+
+html {
+  width: 100%;
+  margin: 25px auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  html {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    max-width: 820px;
+  }
+}
+
+#description {
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.clue {
+  margin-left: 5px;
+  font-size: 16px;
+  color: red;
+}
+
+form {
+  background: linear-gradient(
+    90deg,
+    rgba(166, 0, 255, 0.8),
+    rgba(0, 0, 0, 0.65)
+  );
+  padding: 15px;
+  border-radius: 50px;
+  box-shadow: 3px 3px 5px black, 2px 2px 5px white;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 40px;
+  }
+}
+
+.form-group {
+  margin: 0 auto 20px auto;
+  padding: 5px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  color: #495057;
+  background-color: white;
+  background-clip: padding-box;
+  border: 3px solid purple;
+  border-radius: 50px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 10px;
+  min-height: 20px;
+  min-width: 20px;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 10px;
+  resize: vertical;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: black;
+  color: inherit;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.question1,
+.question2,
+.question3 {
+  display: grid;
+  grid-template-columns: 3fr 0.5fr 0.3fr;
+}
+
+@media (max-width: 576px) {
+  html, p, form, label, .clue {
+    font-size: 20px;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
+}

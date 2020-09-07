@@ -1,0 +1,516 @@
+/* ===============GLOBAL ELEMENT============== */
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-light: rgb(245, 245, 245);
+  --gray-dark: #333;
+  --orange-tiger: #F96714;
+  --purple: #9b59b6;
+  --purple-dark: #804399;
+  --shadow: 2px 2px 2px 0 #777;
+}
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  color: var(--gray-dark);
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  background-image: radial-gradient(
+      rgb(255, 255, 255,0.5),
+      rgb(0, 0, 0, 0.5)),
+      url(https://wallpapercave.com/wp/wp5845271.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ============GLOBAL CLASS AND ID=========== */
+
+/* HEADER = LOGO AND NAV */
+#header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 10px;
+  margin: auto;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    rgb(249, 103, 20, 1),
+    rgb(253, 253, 253, 1));
+  z-index: 2;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 576px) {
+  #header {
+    flex-direction: column;
+    height: auto;
+    position: relative;
+    border-radius: 25px;
+  }
+}
+
+#header-img {
+  margin-left: 25px;
+  max-height: 50px;
+}
+
+#schoolname {
+  display: flex;
+  align-items: center;
+  font-family: 'Russo One';
+  font-size: 30px;
+}
+
+@media (max-width: 576px) {
+  #header-img,
+  #schoolname {
+    margin: 5px 0;
+    font-size: 20px;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  text-shadow: 0.5px 0.5px;
+}
+
+@media (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 30px;
+  color: black;
+}
+
+@media (max-width: 576px) {
+  #header, .nav-link {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+}
+  
+.nav-link:hover,
+#schoolname:hover {
+   color: var(--orange-tiger);
+   text-shadow: 0.5px 0.5px black;
+}
+
+/* MAIN */
+.container {
+  position: relative;
+  background: var(--gray-light);
+  border-radius: 25px;
+  top: 35px;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding: 50px;
+}
+
+main {
+  position: relative;
+  top: 70px;
+  background: rgb(249, 103, 20, 0.15);
+  border-radius: 25px;
+  padding: 20px;
+  margin: 0 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .container, main {
+    top: 10px;
+    padding: 5px;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+h2:not(#banner):after {
+  content: ' ';
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  background-color: var(--orange-tiger);
+  height: 2.5px;
+  margin-top: 20px;
+}
+
+#banner {
+  background-color: var(--gray-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+#email {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  margin-top: -9px;
+  margin-bottom: 15px;
+  padding:  5px 10px;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+
+@media (max-width: 576px) {
+  #banner { padding: 15px 15px; }
+}
+
+/* BUTTON */
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: black;
+  background: black;
+  cursor: pointer;
+  font-weight: 200;
+  border: 1px solid var(--orange-tiger);
+}
+
+.button:hover {
+  border: 1px solid black;
+  background-color: var(--orange-tiger);
+}
+
+.button-hover {
+  color: var(--orange-tiger);
+  font-weight: bold;
+}
+.button-hover:hover {
+  color: var(--gray-light);
+}
+
+#submit {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* SECTION CURRICULLUM */
+#curriculum {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #curriculum {
+    max-width: 100%;
+  }
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.feature:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .feature {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .feature {
+    margin-bottom: 30px;
+  }
+}
+
+.image-curriculum {
+  display: block;
+  margin: auto;
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--orange-tiger);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 576px) {
+  .image-curriculum {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 576px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+
+.desc {
+  margin-left: 50px;
+  text-align: justify;
+}
+
+@media (max-width: 576px) {
+  .desc {
+    margin-left: 0;
+    text-align: justify;
+    font-size: 15px;
+  }
+}
+
+.image-curriculum:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* SECTION INTRODUCTION */
+#introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray-light);
+  overflow: hidden;
+  margin-top: -50px;
+}
+
+#video {
+  max-width: 560px;
+  width: 100%;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 576px) {
+  #video {
+    max-width: 480px;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* SECTION PRICING */
+@media (max-width: 820px) {
+  #pricing {
+    padding-bottom: 0;
+  }
+}
+
+.ranks {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 820px) {
+  .ranks {
+    flex-direction: column;
+  }
+}
+
+.rankcard {
+  margin: 0 auto;
+  width: 235px;
+}
+
+@media (max-width: 820px) {
+  .rankcard { 
+    width: 250px;
+    margin-bottom: 25px;
+  }
+}
+
+.rankcard > div {
+  padding: 10px 20px;
+  background-color: rgb(247, 247, 247);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  border: 1.5px solid var(--orange-tiger);
+}
+
+.rankcard:hover {
+  transform: scale(1.1);
+}
+
+.rank-type {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.rank-price {
+  color: var(--orange-tiger);
+}
+
+.rank-price > span {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.pricing .fa-check {
+  color: var(--orange-tiger);
+  width: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.rankcard .top,
+.rankcard .middle {
+  margin-bottom: 2px;
+}
+
+.middle {
+  height: 150px;
+}
+
+.top {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.bottom {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+/* TEACHERS */
+.img-teachers {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-top: 15px;
+  border-radius: 50%;
+}
+
+.teachers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 820px) {
+  .teachers {
+    flex-direction: column;
+  }
+}
+
+.genin,
+.chuunin,
+.jounin,
+.sannin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(249, 103, 20, 0.5);
+  padding: 10px;
+  border-radius: 500px;
+  border: 1px solid var(--orange-tiger);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 576px) {
+  .genin,
+  .chuunin,
+  .jounin,
+  .sannin {
+    margin-bottom: 15px;
+  }
+}
+
+.genin:hover,
+.chuunin:hover,
+.jounin:hover,
+.sannin:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* FOOTER */
+#footer {
+  background-image: linear-gradient(
+    to top,
+    rgb(249, 103, 20, 1),
+    rgb(253, 253, 253, 1));
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(216, 216, 216);
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+  border-radius: 25px;
+}
+
+#footer .nav-link {
+  margin: 0;
+  color: #333;
+}
+
